@@ -1,15 +1,14 @@
 module.exports = function(app) {
-  var todoList = require("../controllers/taskController");
+  var taskList = require("../controllers/taskController");
 
-  //task Routes
   app
     .route("/tasks")
-    .get(todoList.list_all_tasks)
-    .post(todoList.create_a_task);
+    .get(taskList.all_tasks)
+    .post(taskList.create_task);
 
   app
     .route("/tasks/:taskId")
-    .get(todoList.read_a_task)
-    .put(todoList.update_a_task)
-    .delete(todoList.delete_a_task);
+    .get(taskList.load_task)
+    .put(taskList.update_task)
+    .delete(taskList.delete_task);
 };
