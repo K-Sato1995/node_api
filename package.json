@@ -1,0 +1,14 @@
+{
+  "name": "my-api",
+  "version": "1.0.0",
+  "description": "simple api",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "k-sato",
+  "license": "ISC"
+}
